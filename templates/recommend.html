@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+   <head>
+      <title>Recommended Movies</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='recommend.css') }}">
+      
+
+   </head>
+   <body>
+      <h1>Recommended Movies for the movie - {{ user_movie}}</h1>
+      {{ movie_table|safe }}
+      <script src="{{ url_for('static', filename='main.js') }}"></script>
+   </body>
+</html>
